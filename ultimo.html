@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Última Oportunidade - Bebida Amarela</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png"
+        href="C:/Users/gunuu/.gemini/antigravity/brain/e04f4b0e-da3d-4ce8-88a3-89062255503a/uploaded_image_1768860118998.png">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .danger-badge {
+            background: rgba(255, 59, 48, 0.1);
+            border: 1px solid #ff3b30;
+            color: #ff3b30;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .card-downsell {
+            background: #111;
+            border: 1px dashed rgba(255, 202, 40, 0.3);
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+
+        .price-final {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin: 15px 0;
+        }
+
+        .btn-downsell {
+            background: var(--primary-color);
+            color: #000;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(255, 202, 40, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-downsell:hover {
+            transform: scale(1.02);
+            background: #ffca28;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 40px 25px;
+            border-radius: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .modal-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .modal-text {
+            font-size: 1rem;
+            color: #ccc;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .modal-btn {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .modal-btn:hover {
+            background: #444;
+        }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '811022448441652');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=811022448441652&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+    <div class="container" style="padding-top: 50px; max-width: 600px; margin: 0 auto;">
+
+        <div class="danger-badge">
+            ⚠️ ESPERA! NÃO FECHE ESTA PÁGINA.
+        </div>
+
+        <h1 style="font-size: 1.6rem; line-height: 1.3; margin-bottom: 20px; font-weight: 800;">
+            Essa é a <span style="color: #ff3b30;">última vez</span> que você verá esta oferta...
+        </h1>
+
+        <p style="color: #aaa; max-width: 500px; margin: 0 auto 30px auto; line-height: 1.5;">
+            Eu realmente não quero que o preço seja o motivo para você não ter acesso ao **Protocolo de Aceleração**.
+            Quero te dar um empurrão final para você não travar emocionalmente.
+        </p>
+
+        <div class="card-downsell">
+            <p style="font-size: 1rem; color: #fff; margin-bottom: 10px;">Aproveite agora com desconto máximo:</p>
+            <div class="price-final">
+                R$ 15,00
+            </div>
+            <p style="font-size: 0.8rem; color: #666;">*Pagamento único. Acesso vitalício.*</p>
+        </div>
+
+        <button onclick="window.location.href='#'" class="btn-downsell">
+            SIM! QUERO LIBERAR MEU ACESSO POR R$ 15,00
+        </button>
+
+        <a href="javascript:void(0)" onclick="showFinalModal()"
+            style="display: block; margin-top: 25px; color: #444; text-decoration: none; font-size: 0.85rem; font-weight: 500;">
+            Não, obrigado. Prefiro ignorar esta chance e seguir com o plano básico.
+        </a>
+
+        <div style="margin-top: 60px; border-top: 1px solid #222; padding-top: 20px;">
+            <p style="font-size: 0.85rem; color: #555; max-width: 400px; margin: 0 auto;">
+                Esta oferta é exclusiva para esta página. Ao sair, o valor voltará ao preço original de R$ 97,00.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Final Modal -->
+    <div id="finalModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-title">Tudo pronto!</div>
+            <p class="modal-text">
+                O acesso ao seu conteúdo principal e os bônus já foram enviados para o seu e-mail. <br><br>
+                Verifique sua caixa de entrada (e a pasta de spam) para começar agora mesmo!
+            </p>
+            <button class="modal-btn" onclick="window.location.href='index.html'">Entendido, obrigado!</button>
+        </div>
+    </div>
+
+    <script>
+        function showFinalModal() {
+            document.getElementById('finalModal').style.display = 'flex';
+        }
+    </script>
+
+</body>
+
+</html>
