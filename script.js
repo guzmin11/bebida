@@ -30,8 +30,8 @@ const quizData = [
 ];
 
 const motivationImages = [
-    "C:/Users/gunuu/.gemini/antigravity/brain/e04f4b0e-da3d-4ce8-88a3-89062255503a/uploaded_image_0_1768598772098.jpg",
-    "C:/Users/gunuu/.gemini/antigravity/brain/e04f4b0e-da3d-4ce8-88a3-89062255503a/uploaded_image_1_1768598772098.png"
+    "./uploaded_image_0_1768598772098.jpg",
+    "./uploaded_image_1_1768598772098.png"
 ];
 
 let currentStep = 0;
@@ -238,3 +238,4 @@ function scrollCarousel(direction) {
     const scrollAmount = carousel.clientWidth * 0.8; // Scroll 80% of width
     carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
+
