@@ -198,7 +198,7 @@ function showSalesPage() {
     const video = document.getElementById('vsl-video');
     const hint = document.getElementById('vsl-controls-hint');
     if (video) {
-        video.src = "https://drive.google.com/file/d/1cvbNjoE4HGOJ8ZsPg-tI3zpkJJ7FrJyb/preview?autoplay=1";
+        video.src = "https://drive.google.com/file/d/1cvbNjoE4HGOJ8ZsPg-tI3zpkJJ7FrJyb/preview";
 
         // Final quality is controlled by Drive, but we ensure it's loaded with autoplay
         // Show hint briefly and then on hover
@@ -238,4 +238,5 @@ function scrollCarousel(direction) {
     const scrollAmount = carousel.clientWidth * 0.8; // Scroll 80% of width
     carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
+
 
